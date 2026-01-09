@@ -3,64 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Details</title>
+    <title>VoltCheck | The Future of Decentralized Grid Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic styling to make the content look clean */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            color: #333; /* Dark gray text */
-        }
-        .header {
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .detail-line {
-            margin-bottom: 8px;
-        }
-        .label {
-            font-weight: bold;
-            display: inline-block;
-            min-width: 150px; /* Aligns the data points */
-        }
-        .score {
-            font-size: 1.2em;
-            color: #007bff; /* A distinct color for the score */
-            font-weight: bold;
-            margin-top: 15px;
-        }
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #0a0a0c; color: #e2e8f0; }
+        .accent-gradient { background: linear-gradient(90deg, #3b82f6, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-blur { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow:hover { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
     </style>
 </head>
-<body>
+<body class="leading-relaxed">
 
-    <p class="header">
-        on-fun-7467.my.salesforce-sites.com
-    </p>
-    
-    <div class="detail-line">
-        <span class="label">Certificate ID :</span> FSP/2024/6/10172007
-    </div>
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter">VOLT<span class="text-blue-500">CHECK</span></div>
+        <div class="space-x-8 hidden md:flex text-sm uppercase tracking-widest opacity-70">
+            <a href="#about" class="hover:text-blue-400">Mission</a>
+            <a href="#tech" class="hover:text-blue-400">Technology</a>
+            <a href="#token" class="hover:text-blue-400">Tokenomics</a>
+        </div>
+        <a href="https://solscan.io" target="_blank" class="px-5 py-2 border border-blue-500 text-blue-500 rounded-full text-sm font-bold glow transition-all">VIEW ON SOLANA</a>
+    </nav>
 
-    <div class="detail-line">
-        <span class="label">Candidate :</span> Samvreth G
-    </div>
-    
-    <div class="detail-line">
-        <span class="label">Assessment Name :</span> *Cybersecurity Analysis & Design*
-    </div>
+    <section class="max-w-4xl mx-auto text-center py-24 px-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Securing the Global Grid with <span class="accent-gradient">DePIN</span></h1>
+        <p class="text-lg md:text-xl opacity-60 mb-10 max-w-2xl mx-auto">
+            VoltCheck turns every power outlet into a verified data oracle. We use hardware-level intelligence to monitor, stabilize, and decentralize energy monitoring on the Solana Blockchain.
+        </p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-lg font-bold transition-all">Download Whitepaper</button>
+            <button class="bg-zinc-800 hover:bg-zinc-700 px-8 py-3 rounded-lg font-bold transition-all">Explore Network</button>
+        </div>
+    </section>
 
-    <div class="detail-line">
-        <span class="label">Candidate Email:</span> gsamvreth@gmail.com
-    </div>
+    <section id="about" class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6 py-12">
+        <div class="card-blur p-8 rounded-2xl">
+            <h3 class="text-blue-400 text-3xl font-bold mb-2">10ms</h3>
+            <p class="opacity-50 text-sm uppercase">Response Latency</p>
+        </div>
+        <div class="card-blur p-8 rounded-2xl">
+            <h3 class="text-green-400 text-3xl font-bold mb-2">ESP32-S3</h3>
+            <p class="opacity-50 text-sm uppercase">Core Hardware</p>
+        </div>
+        <div class="card-blur p-8 rounded-2xl">
+            <h3 class="text-purple-400 text-3xl font-bold mb-2">1,000,000</h3>
+            <p class="opacity-50 text-sm uppercase">Total $VOLT Supply</p>
+        </div>
+    </section>
 
-    <div class="detail-line">
-        <span class="label">Date of issue :</span> 01/11/2025
-    </div>
+    <section id="tech" class="max-w-5xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Built for Speed & Trust</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-blue-500">Hardware Acceleration</h4>
+                <p class="opacity-60">Utilizing custom firmware on ESP32-S3 microcontrollers, VoltCheck samples grid data at 1kHz. We use TinyML models locally to detect anomalies before they reach the chain.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-green-500">Solana Integration</h4>
+                <p class="opacity-60">By leveraging Solana’s high throughput, our DePIN network rewards miners in real-time. Every 230V signal verified is a proof-of-uptime stored on-chain forever.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="score">
-        <span class="label" style="min-width: 0;">Percentage Marks Overall:</span> 95.00
-    </div>
+    <footer id="token" class="border-t border-zinc-800 py-12 mt-20">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center opacity-40 text-sm">
+            <p>&copy; 2026 VoltCheck Network. Built for the Solana Renaissance Hackathon.</p>
+            <div class="space-x-6 mt-4 md:mt-0">
+                <a href="#">X (Twitter)</a>
+                <a href="#">Discord</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
